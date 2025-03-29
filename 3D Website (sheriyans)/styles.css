@@ -1,0 +1,303 @@
+@font-face {
+    font-family: 'Vastago Grotesk';
+    src: url('fonts/VastagoGrotesk-Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vastago Grotesk';
+    src: url('fonts/VastagoGrotesk-ExtraLight.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vastago Grotesk';
+    src: url('fonts/VastagoGrotesk-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vastago Grotesk';
+    src: url('fonts/VastagoGrotesk-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vastago Grotesk';
+    src: url('fonts/VastagoGrotesk-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vastago Grotesk';
+    src: url('fonts/VastagoGrotesk-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vastago Grotesk';
+    src: url('fonts/VastagoGrotesk-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vastago Grotesk';
+    src: url('fonts/VastagoGrotesk-Heavy.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vastago Grotesk';
+    src: url('fonts/VastagoGrotesk-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Vastago Grotesk', sans-serif;
+    text-transform:none;
+    color: rgb(255, 255, 255);
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+
+#fluid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    z-index: 1000;
+}
+
+
+nav{
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    padding: 40px 200px;
+    justify-content: space-between;
+    /* background-color: #18b039; */
+    height: 15vh;
+}
+
+#nav-btn{
+    background-color: #040404;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+    /* box-shadow: 0 0 20px 1px rgba(255, 128, 0, 0.5); */
+    z-index: 2;
+}
+
+#nav-btn:hover{
+    background:linear-gradient(to bottom right, #ff6200, #b500b5,#00ffbb);
+    box-shadow: 0 0 60px 3px rgba(183, 0, 255, 0.5);
+}
+.nav-part2{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 1vh 0;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-part2 h4{
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1vw;
+    margin-bottom: 1.5vw;
+    padding: 0 21px;
+}
+
+.nav-part2 h5{
+    /* background-color: #ff0000; */
+    margin-bottom: 0.8vw;
+    display: none;
+    overflow: hidden;
+    padding: 0 18px;
+    /* background-color: #ff0000; */
+}
+
+.nav-part2 h5 span{
+    font-size: 0.85vw;
+    font-weight: 100;
+    display: inline-block;
+    transform: translateY(25px);
+}
+
+#nav-bottom{
+    background-color: #040404;
+    height: 3.5vh;
+    width: 74%;
+    position: absolute;
+    top: 100%;
+    z-index: 9;
+    border-bottom: 0.5px solid white;
+}
+
+
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #040404;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page1 h1{
+    font-weight: 900;
+    font-size: 15vh;
+    line-height: 9vh;
+    
+}
+
+#page1h1{
+    margin-bottom: 16px;
+} 
+
+#page1 p{
+    text-align: center;
+    width: 40%;
+    font-weight: 100;
+    margin-top: 1vh;
+
+}
+
+#page1h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#page1h2{
+    background: linear-gradient(to right, #ff6200, #b500b5,#006aff, #00ffbb, #ff6200);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Hide default text color */
+    display: inline-block; /* Ensures background covers the whole text */
+    padding-top: 12px;
+    padding-bottom: 30px;
+    margin-bottom: 0px;
+    background-size: 200% auto;
+    animation: gradient 3s infinite ease-in-out;
+    
+    
+}
+@keyframes gradient {
+    0% {
+        background-position: 200% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} 
+#page1h3 h4{
+    font-weight: 100;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+#page1h3 h4:hover{
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+#page1h3 h4:nth-last-child(2){
+    border:none;
+    
+}
+#page1h3 h4:nth-last-child(2):hover{
+    background-color: transparent;
+    
+}
+#fire{
+    width: 1em; /* Adjust size if needed */
+    height: 1em;
+    margin: 0 -7px -4px 0;
+}
+
+#moving-div {
+    /* background-color: red; */
+    margin-top: 10vh;
+    position: absolute;
+    bottom: 7%;
+    white-space: nowrap;
+    padding: 1.2vw;
+    overflow: hidden;
+    width: 44%;
+
+}
+
+#moving-div .move {
+    display: inline-block;
+    animation-name: mobe;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#moving-div .move img {
+    height: 1vw;
+    margin: 0 1.2vw;
+}
+
+@keyframes mobe {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+
+}
+
+#blur-left{
+    width: 20%;
+    height: 100%;
+    background-color: #040404;
+    position: absolute;
+    top: 0;
+    left: -10%;
+    z-index: 1; 
+    filter: blur(7px);
+    
+}
+
+#blur-right{
+    width: 20%;
+    height: 100%;
+    background-color: #040404;
+    position: absolute;
+    top: 0;
+    right: -10%;
+    z-index: 1; 
+    filter: blur(7px);
+    
+}
